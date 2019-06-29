@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Box Model / Margin & Padding</title>
+    <style media="screen">
+    /* css reset, to get rid of all the defaults a browser does (no reason to do this) */
+    * {
+      margin: 0;
+      padding: 0;
+      /* if you set width, and then give padding, it adds padding to the width,
+      so that the element is width + padding. To fix that: box sizing: */
+      box-sizing: border-box;
+    }
+    .box {
+      background: #f4f4f4;
+      border: 2px #777 solid;
+      width: 500px;
+      padding: 20px;
+      margin: 20px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h3>Box One</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="box">
+      <h3>Box Two</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </body>
+</html>
