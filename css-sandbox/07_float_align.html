@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Float & Align</title>
+    <style media="screen">
+    * {
+      /* so that float works */
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.4em;
+    }
+    .container {
+      max-width: 960px; /* max-width so that it's ok for cell phones, reg width won't work*/
+      margin: 30px auto; /* Auto (for left/right) Makes it even on both sides */
+    }
+    /* so that Box-4 will no be covered over */
+    .clr {
+      clear: both;
+    }
+    .box {
+      background: #f4f4f4;
+      border: 1px solid #333;
+      padding: 20px;
+      margin-bottom: 15px;
+    }
+    .box p {
+      /* Text Align */
+      text-align: justify;
+    }
+    /* Float */
+    #box-2 {
+      float: left;
+      width: 68%; /* Best to use % instead of px */
+    }
+    #box-3 {
+      float: right;
+      width: 30%;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <div class="box" id="box-1">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="box" id="box-2">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="box" id="box-3">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="clr"></div>
+    <div class="box" id="box-4">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    </div>
+  </body>
+</html>
