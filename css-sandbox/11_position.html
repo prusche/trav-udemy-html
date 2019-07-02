@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Positioning</title>
+    <style media="screen">
+      .box {
+        width: 100px;
+        height: 100px;
+      }
+      .container {
+        position: relative;
+        width: 500px;
+        height: 500px;
+        background: #333;
+      }
+      #box-1 {
+        /* relative position can be moved from the top left corner of the doc */
+        position: relative;
+        top: 50px;
+        left: 50px;
+        background: red;
+        /* higher the z-index, the closer to you */
+        z-index: 1;
+      }
+      #box-2 {
+        /* absolute can be moved within a container whose
+        position is set as relative */
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        background: yellow;
+      }
+      #box-3 {
+        position: absolute;
+        bottom: 100px;
+        right: 100px;
+        background: green;
+      }
+      #box-4 {
+        /* to pull out of the normal flow and fix it in place */
+        position: fixed;
+        background: blue;
+      }
+      #box-5 {
+        position: sticky;
+        top: 0;
+        background: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box" id="box-1"></div>
+  <div class="container">
+    <div class="box" id="box-2"></div>
+    <div class="box" id="box-3"></div>
+    </div>
+    <div class="box" id="box-4"></div>
+    <div class="box" id="box-5"></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </body>
+</html>
