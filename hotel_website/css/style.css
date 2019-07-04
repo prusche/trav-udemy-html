@@ -65,3 +65,17 @@ p {
   background-color: #444;
   color: #f7c08a;
 }
+/* Showcase Styles */
+#showcase {
+  background: url('../img/showcase.jpg') no-repeat center center;
+  height: 600px;
+}
+#showcase .showcase-content {
+  color: #FFF;
+  text-align: center;
+  padding-top: 170px;
+}
+#showcase .showcase-content h1 {
+  font-size: 60px;
+  line-height: 1.2em;
+}
